@@ -1,0 +1,14 @@
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary-purple-color: #5546b1;
+  --secondary-purple-color: #7d67ff;
+  --alternate-purple-color: #7c65fb;
+  --light-purple-color: #b6aaff;
+  --primary-font: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+>>>>>>> a3632222e0e6f5b5422dd6babefcf09e08ff1889
