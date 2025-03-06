@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./NavBar.module.css";
 import { NavLink, Link } from "react-router-dom";
 import Button from "../Button/Button";
+import { WalletConnectButton } from "@solana/wallet-adapter-react-ui";
+import "@solana/wallet-adapter-react-ui/styles.css"; 
 
 const NavBar = () => {
   return (
@@ -39,7 +41,7 @@ const NavBar = () => {
         </NavLink>
       </div>
 
-      <Button text="Connect Wallet" />
+      <WalletConnectButton />
     </div>
   );
 };
