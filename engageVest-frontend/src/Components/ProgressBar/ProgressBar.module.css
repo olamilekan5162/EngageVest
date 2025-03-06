@@ -1,0 +1,25 @@
+.progressContainer {
+    margin: 15px 0;
+  }
+  
+  .labelContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .progressBar {
+    width: 100%;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progressFill {
+    height: 100%;
+    background: #6a0dad;
+    transition: width 0.5s ease-in-out;
+  }
+  
