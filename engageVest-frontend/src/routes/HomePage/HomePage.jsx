@@ -1,24 +1,16 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import styles from './HomePage.module.css'
 import Button  from '../../components/Button/Button';
+import NavBar from '../../components/NavBar/NavBar';
+import { Connect } from 'vite';
 
 const HomePage = () => {
-  useEffect (() => {
-    document.body.classList.add('homePageBg');
 
-    const gridOverlay = document.createElement('div');
-    gridOverlay.classList.add('grid-overlay');
-    document.body.appendChild(gridOverlay)
-
-     return () => {
-       document.body.classList.remove('homePageBg');
-       document.body.removeChild(gridOverlay)
-     };
-  }, []);
 
  
   return (
     <section className={styles.homePage_container}>
+      <div className={styles.grid_overlay}></div>
       <div className={styles.wrapper}>
         <h1>Powering Web3 Growth with Performance-Based Rewards</h1>
         <p>
