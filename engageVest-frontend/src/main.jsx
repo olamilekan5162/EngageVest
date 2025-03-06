@@ -3,10 +3,12 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import HomePage from "./routes/HomePage/HomePage.jsx"
+import HomePage from "./routes/HomePage/HomePage.jsx";
 import Dashboard from "./routes/Dashboard/Dashboard.jsx";
-import CampaignPage from "./routes/CampaignPage/CampaignPage.jsx"
+import CampaignPage from "./routes/CampaignPage/CampaignPage.jsx";
 import Referrals from "./routes/Referrals/Referrals.jsx";
+import WalletContextProvider from "./context/WalletContextProvider.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <WalletContextProvider>
+      <RouterProvider router={router} />
+    </WalletContextProvider>
   </StrictMode>
 );
