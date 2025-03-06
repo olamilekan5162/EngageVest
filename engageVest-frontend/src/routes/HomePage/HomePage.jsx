@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './HomePage.module.css'
 import Button  from '../../components/Button/Button';
-import NavBar from '../../components/NavBar/NavBar';
-import { Connect } from 'vite';
+
+
 
 const HomePage = () => {
 
