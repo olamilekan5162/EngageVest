@@ -1,8 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-:root{
-    --primary-color: #fff;
-    --secondary-color: #7c65fb;
-    --alternate-color: #5546b1;
-    --primary-font: 'Roboto', sans-serif
+:root {
+  --primary-color: #fff;
+  --secondary-color: #7c65fb;
+  --alternate-color: #5546b1;
+  --primary-font: "Roboto", sans-serif;
 }
+
+.homePageBg {
+  background-color: var(--alternate-color);
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.1) 0px,
+      rgba(255, 255, 255, 0.1) 3px,
+      transparent 3px,
+      transparent 50vh
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1) 0px,
+      rgba(255, 255, 255, 0.1) 3px,
+      transparent 3px,
+      transparent 50vw
+    );
+    background-size: 100vw 100vh;
+  animation: generateGrid 8s linear infinite alternate;
+  z-index: -1;
+}
+
+
+@keyframes generateGrid {
+  0% {
+    background-position: 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 200px 200px, 200px 200px;
+  }
+}
+
+
+
