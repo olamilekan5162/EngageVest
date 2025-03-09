@@ -10,7 +10,6 @@ import {
 import {
   WalletModalProvider,
   WalletMultiButton,
-  WalletConnectButton
 } from "@solana/wallet-adapter-react-ui";
 import { clusterApiUrl } from "@solana/web3.js";
 

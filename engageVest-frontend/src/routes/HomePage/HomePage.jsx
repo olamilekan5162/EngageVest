@@ -1,13 +1,8 @@
-import React from 'react'
-import styles from './HomePage.module.css'
-import Button  from '../../components/Button/Button';
-
-
+import React from "react";
+import styles from "./HomePage.module.css";
+import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
 const HomePage = () => {
-
-
- 
   return (
     <section className={styles.homePage_container}>
       <div className={styles.grid_overlay}></div>
@@ -19,10 +14,10 @@ const HomePage = () => {
           Powered by Solana smart contracts for full transparency.
         </p>
 
-        <Button text="Connect Wallet" />
+        <WalletMultiButton>Connect Wallet</WalletMultiButton>
       </div>
     </section>
   );
-}
+};
 
-export default HomePage
+export default HomePage;
