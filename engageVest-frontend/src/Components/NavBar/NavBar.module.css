@@ -14,10 +14,13 @@
 .navbar_logo {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--alternate-color);
   letter-spacing: 1px;
   cursor: pointer;
+}
+
+.navbar_logo a{
   text-decoration: none;
+  color: var(--alternate-color);
 }
 
 .navbar_links {
